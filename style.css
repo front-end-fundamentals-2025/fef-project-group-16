@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color:#1e3121;
+    height: 80px;
+    width: 100%;
+    position: relative;
+}
+h1{
+    color: white;
+    position:absolute;
+    left: 120px;
+    top:0;
+    line-height: 80px;
+}
+header ul {
+    position: absolute;
+    right: 5vw;
+    top:0;
+    line-height: 80px;
+}
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+.MianpageSlogan {
+    background-color: #2e4c33;
+    color: white;
+    height: 80vh;
+    background-image: url("images/flowerstore\ main\ page\ background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.MianpageSlogan h2{
+    font-size: 40px;
+}
+.MianpageSlogan p {
+    color: #f5f2e7;
+    font-size: 20px;
+    margin: 25px 0;
+}
+.MianpageSlogan a{
+    color: white;
+    text-decoration: none;
+}
+.MianpageIntroduction {
+    background-color: antiquewhite;
+    color: rgb(88, 62, 55);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+
+
