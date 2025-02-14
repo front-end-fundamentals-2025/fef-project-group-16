@@ -1,112 +1,204 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 header {
-    background-color:#1e3121;
-    height: 80px;
-    width: 100%;
-    position: relative;
+  background-color: #1e3121;
+  height: 80px;
+  width: 100%;
+  position: relative;
 }
-h1{
-    color: white;
-    position:absolute;
-    left: 120px;
-    top:0;
-    line-height: 80px;
+h1 {
+  color: white;
+  position: absolute;
+  left: 120px;
+  top: 0;
+  line-height: 80px;
 }
 header ul {
-    position: absolute;
-    right: 5vw;
-    top:0;
-    line-height: 80px;
+  position: absolute;
+  right: 5vw;
+  top: 0;
+  line-height: 80px;
 }
 header li {
-    display: inline;
-    margin-right: 4vw;
+  display: inline;
+  margin-right: 4vw;
 }
 header a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-header a:hover{
-    text-decoration: underline;
+header a:hover {
+  text-decoration: underline;
 }
 
 .MianpageSlogan {
-    background-color: #2e4c33;
-    color: white;
-    height: 80vh;
-    background-image: url("images/flowerstore\ main\ page\ background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: #2e4c33;
+  color: white;
+  height: 80vh;
+  background-image: url("images/flowerstore\ main\ page\ background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.MianpageSlogan h2{
-    font-size: 40px;
+.MianpageSlogan h2 {
+  font-size: 40px;
 }
 .MianpageSlogan p {
-    color: #f5f2e7;
-    font-size: 20px;
-    margin: 25px 0;
+  color: #f5f2e7;
+  font-size: 20px;
+  margin: 25px 0;
 }
-.MianpageSlogan a{
-    color: white;
-    text-decoration: none;
+.MianpageSlogan a {
+  color: white;
+  text-decoration: none;
 }
 .MianpageIntroduction {
-    background-color: antiquewhite;
-    color: rgb(88, 62, 55);
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    line-height: 1.8em;
+  background-color: antiquewhite;
+  color: rgb(88, 62, 55);
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.8em;
 }
 
 .info {
-    display: flex;
+  display: flex;
 }
 
 .info img {
-    width: 40%;
+  width: 40%;
 }
 .info1 {
-    width: 60%;
-    background-color: #2e4c33;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 60%;
+  background-color: #2e4c33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.info1 h2{
-    color: #f5f2e7;
-    font-size: 23px;
-    margin-bottom: 30px;
+.info1 h2 {
+  color: #f5f2e7;
+  font-size: 23px;
+  margin-bottom: 30px;
 }
 .info1 p {
-    text-align: center;
-    line-height: 2em;
-    font-size: 19px;
-    color: #f5f2e7;
+  text-align: center;
+  line-height: 2em;
+  font-size: 19px;
+  color: #f5f2e7;
 }
 footer {
-    background-color: #1e3121;
-    color: white;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    line-height: 1.8em;
+  background-color: #1e3121;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 1.8em;
 }
 
+/* Product-page*/
+.product-header img {
+  width: 100%;
+  height: 400px;
+}
 
+.product-middle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  background-color: antiquewhite;
+  text-align: center;
+}
 
+.product-middle h3 {
+  padding-top: 70px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: rgb(88, 62, 55);
+}
 
+.product-middle hr {
+  width: 80%;
+  height: 2px;
+  background-color: #2e4c33;
+  border: none;
+  margin: 15px auto;
+}
+.product-middle p {
+  font-size: 15px;
+  color: rgb(88, 62, 55);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-top: 70px;
+  gap: 5px;
+}
+
+.box {
+  width: 50%;
+  height: 310px;
+  background-color: rgba(128, 128, 128, 0.11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+
+.recommendation {
+  width: 50%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.container p {
+  font-size: 20px;
+}
+
+.product-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  background-color: #2e4c33;
+  text-align: center;
+  position: relative;
+}
+
+.product-bottom h3 {
+  padding-top: 70px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #f5f2e7;
+}
+
+.product-bottom hr {
+  width: 4px;
+  height: 18%;
+  background-color: #f5f2e7;
+  border: none;
+  position: absolute;
+  left: 300px;
+  top: 8%;
+}
+.product-bottom p {
+  font-size: 23px;
+  color: #f5f2e7;
+}
