@@ -117,7 +117,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 700px;
+  height: 800px;
   background-color: antiquewhite;
   text-align: center;
 }
@@ -132,7 +132,7 @@ footer {
 .product-middle hr {
   width: 80%;
   height: 2px;
-  background-color: #2e4c33;
+  background-color: rgb(88, 62, 55);
   border: none;
   margin: 15px auto;
 }
@@ -172,11 +172,12 @@ footer {
   font-size: 20px;
 }
 
+/*bottom*/
 .product-bottom {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 700px;
+  height: 1200px;
   background-color: #2e4c33;
   text-align: center;
   position: relative;
@@ -190,15 +191,93 @@ footer {
 }
 
 .product-bottom hr {
-  width: 4px;
-  height: 18%;
-  background-color: #f5f2e7;
+  width: 80%;
+  height: 2px;
+  background-color: white;
   border: none;
-  position: absolute;
-  left: 300px;
-  top: 8%;
+  margin: 15px auto;
 }
 .product-bottom p {
   font-size: 23px;
   color: #f5f2e7;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+}
+.card {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  color: black;
+  cursor: pointer;
+  top: 200px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  transition: 0.35s;
+}
+.card .text {
+  position: absolute;
+  inset: 30px;
+  padding: 0 18px;
+}
+
+.card .text h2,
+.card .text p {
+  margin-top: 10px;
+  opacity: 0;
+  transition: 0.35s;
+}
+
+.card .text h2 {
+  font-size: 50px;
+  font-weight: 300;
+  transform: translate(30% 0%);
+  transition-delay: 0.3s;
+}
+.card .text p {
+  font-size: 30px;
+  font-weight: 200;
+  transform: translate(0% 30%);
+}
+
+.card .button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2e4c33; /* 绿色背景 */
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0; /* 默认隐藏 */
+  transition: opacity 0.35s, transform 0.3s;
+  border-radius: 5px;
+}
+
+.card .button:hover {
+  background-color: #1f3624;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.card:hover .text h2,
+.card:hover .text p,
+.card:hover .button {
+  opacity: 1;
+  transform: translate(0% 0%);
+  transition-delay: 0.4s;
 }
