@@ -268,13 +268,13 @@ footer {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #2e4c33; /* 绿色背景 */
+  background-color: #2e4c33;
   color: white;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  opacity: 0; /* 默认隐藏 */
+  opacity: 0;
   transition: opacity 0.35s, transform 0.3s;
   border-radius: 5px;
 }
@@ -295,3 +295,152 @@ footer {
   transform: translate(0% 0%);
   transition-delay: 0.4s;
 }
+
+/* Product-Single Stem Flowers-page*/
+
+.product-background {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.product-background h3 {
+  padding-top: 70px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: rgb(88, 62, 55);
+}
+
+.product-background hr {
+  width: 80%;
+  height: 2px;
+  background-color: rgb(88, 62, 55);
+  border: none;
+  margin: 15px auto;
+}
+.product-background p {
+  font-size: 15px;
+  color: rgb(88, 62, 55);
+}
+
+.single-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin: 0 auto;
+  padding-left: 230px;
+  padding-right: 230px;
+  padding-top: 90px;
+}
+
+.single-card {
+  background-color: rgba(128, 128, 128, 0.11);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.single-card:hover .information-box {
+  display: flex;
+  opacity: 1;
+}
+
+.single-card:hover {
+  transform: translateY(-15px);
+}
+
+.single-card img {
+  width: 100%;
+  height: 70%;
+}
+
+.single-card h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px;
+  color: rgb(88, 62, 55);
+}
+
+.single-card p {
+  font-size: 13px;
+  color: rgba(88, 62, 55, 0.562);
+  line-height: 1.5;
+}
+
+.information-box {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5f2e7;
+  width: 80%;
+  height: 20%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 15px;
+  padding-left: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.information-box a {
+  text-decoration: none;
+  background-color: #1e3121;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+  margin-right: 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+.bottom-button {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.bottom-button a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #1f3624;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  animation-name: change-color;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.bottom-button a:hover {
+  background-color: antiquewhite;
+  color: rgb(88, 62, 55);
+  transform: scale(1.1);
+}
+@keyframes change-color {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Product-Bouquets-page*/
