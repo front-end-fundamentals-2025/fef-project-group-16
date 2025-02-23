@@ -15,22 +15,96 @@ h1 {
   top: 0;
   line-height: 80px;
 }
-header ul {
-  position: absolute;
-  right: 5vw;
-  top: 0;
-  line-height: 80px;
+
+nav {
+  display: flex;
+  justify-content: flex-end;
 }
-header li {
-  display: inline;
-  margin-right: 4vw;
+
+.menu {
+  display: flex;
+  padding-top: 20px;
+  margin: 0;
+  list-style: none;
 }
-header a {
+
+.menu li {
+  position: relative;
+  border: none;
+}
+
+.menu a {
+  display: block;
   color: white;
+  line-height: 50px;
+  padding: 0 20px;
   text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-header a:hover {
-  text-decoration: underline;
+
+.menu li:hover {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@keyframes naveffect {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.menu > li:hover {
+  animation-name: naveffect;
+  animation: naveffect 0.2s ease-in-out forwards;
+}
+
+.submenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #f5f2e7;
+  width: 160px;
+  border-radius: 5%;
+  display: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  list-style: none;
+}
+
+.submenu li {
+  opacity: 1;
+}
+
+.menu > li:hover .submenu {
+  display: block;
+}
+
+.menu > li > a {
+  font-size: 25px;
+}
+.menu .submenu li a {
+  padding: 10px;
+  display: block;
+  color: rgb(88, 62, 55);
+  position: relative;
+  font-size: 20px;
+}
+
+.menu .submenu li:hover a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 80%;
+  background-color: rgb(88, 62, 55);
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
 }
 
 .MianpageSlogan {
