@@ -712,5 +712,62 @@ footer p {
   width: 100%;
   height: auto;
   background-color: #cf7443e1;
+  text-align: center;
+  padding: 50px 0;
+}
+.product-background2 h {
+  font-size: 25px;
+  margin: 10px 0 5px;
+  color: white;
 }
 
+.product-background2 hr {
+  width: 80%;
+  height: 2px;
+  background-color: white;
+  border: none;
+  margin: 15px auto;
+}
+
+.details-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.details-item {
+  width: 200px;
+  height: 280px;
+  background-color: antiquewhite;
+  border-radius: 5px 50px 160px 160px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.details-item img {
+  width: 80%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.details-item h3 {
+  font-size: 25px;
+  margin: 10px 0 5px;
+  color: rgb(88, 62, 55);
+}
+
+.details-item p {
+  font-size: 15px;
+  color: rgb(88, 62, 55);
+  padding: 0 10px;
+}
