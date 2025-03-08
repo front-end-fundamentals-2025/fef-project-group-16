@@ -176,49 +176,117 @@ nav {
   margin-top: 10px;
   margin-bottom: 40px;
 }
-footer {
-  position: relative;
+
+.page-footer {
+  background-color: #495147;
+  color: #f5f2e7;
+}
+
+.page-footer .top {
   width: 100%;
-  background-color: #1e3121;
-  padding: 50px 100px;
-  color: white;
-  height: auto;
+  padding: 100px 0;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.page-footer .top .introduction {
+  flex: 2;
+  padding-right: 30px;
+}
+
+.page-footer .top .join-us,
+.page-footer .top .social-media {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.page-footer .top .contact {
+  width: 96px;
+}
+
+.page-footer h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.page-footer .top .introduction p {
+  color: #988f8f;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.page-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-footer ul li {
+  margin-top: 10px;
+  line-height: 24px;
+}
+
+.page-footer ul li a {
+  color: #b8aeae;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.page-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.page-footer .top .contact img {
+  width: 96px;
+  height: 96px;
+  border-radius: 1px;
+}
+
+.page-footer .footer-bottom {
+  padding: 20px 0;
+  border-top: 1px solid rgba(225, 255, 255, 0.1);
+}
+
+.page-footer .footer-bottom .container {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-}
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
 
-footer.container .sec {
-  margin-right: 30px;
+.page-footer .footer-bottom p {
+  font-size: 14px;
 }
-footer.container.sec.aboutus {
-  width: 40%;
+
+.page-footer .footer-bottom ul {
+  display: flex;
+  gap: 15px;
 }
-footer .container h2 {
-  position: relative;
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 15px;
+
+.page-footer .footer-bottom li {
+  display: inline;
 }
-footer.container h2:before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background: #f00;
+
+@media (max-width: 768px) {
+  .page-footer .top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .page-footer .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-footer .footer-bottom ul {
+    justify-content: center;
+  }
 }
-footer p {
-  color: #999;
-}
+
+
+
 .sci {
   list-style: none;
 }
