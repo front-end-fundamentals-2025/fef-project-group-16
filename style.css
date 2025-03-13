@@ -11,7 +11,11 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-}
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  }
+
 h1 {
   color: white;
   position: absolute;
@@ -50,6 +54,30 @@ nav {
 .menu li:hover {
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
+}
+.menu > li:hover {
+  animation: naveffect 0.2s ease-in-out forwards;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  line-height: 50px;
+  padding: 0 20px;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.menu li:hover {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.menu > li:hover {
+  animation-name: naveffect;
+  animation: naveffect 0.2s ease-in-out forwards;
 }
 
 @keyframes naveffect {
@@ -148,6 +176,35 @@ nav {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+@media (max-width: 550px) {
+  header {
+    height: auto;
+    flex-direction: column; 
+  }
+
+  .container-search {
+    position: static;
+    width: 100%; 
+    margin-top: 10px; 
+  }
+
+  .search-container {
+    width: 90%; 
+  }
+
+  h1 {
+    position: static; 
+    text-align: center; 
+    line-height: normal; 
+    margin-top: 10px; 
+  }
+
+  nav {
+    justify-content: center; /
+  }
+}
+
 
 .MianpageSlogan {
   background-color: #2e4c33;
