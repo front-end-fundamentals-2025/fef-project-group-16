@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const menuToggle = document.querySelector('.menu-toggle');
+const menuToggle = document.querySelector('.menu');
 const menu = document.querySelector('.menu');
 
 menuToggle.addEventListener('click', () => {

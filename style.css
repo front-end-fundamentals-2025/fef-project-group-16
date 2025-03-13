@@ -98,34 +98,10 @@ nav {
   border-bottom-right-radius: 10px;
 }
 
-.menu-toggle {
-  display: none;
-  background: none;
-  color: white;
-  font-size: 30px;
-  border: none;
-  cursor: pointer;
-}
-
 @media (max-width: 1024px) {
   header {
     flex-direction: column;
     height: auto;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-
-  .menu.active {
-    display: flex;
   }
 
   .search-container {
