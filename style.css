@@ -592,6 +592,7 @@ nav {
   height: 100%;
   background-color: antiquewhite;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .product-background h3 {
@@ -622,18 +623,19 @@ nav {
   padding-left: 230px;
   padding-right: 230px;
   padding-top: 90px;
+  padding-bottom: 60px;
 }
 
 .single-card {
   position: relative;
-  background-color: rgba(128, 128, 128, 0.11);
+  background-color: rgba(255, 255, 255, 0.354);
   border-radius: 20px;
   overflow: hidden;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px;
   overflow: visible;
   transition: transform 0.3s ease-in-out;
 }
@@ -655,7 +657,7 @@ nav {
 .single-card h2 {
   font-size: 28px;
   font-weight: bold;
-  margin: 5px 10px 0 10px;
+  margin: 10px 10px 30px 10px;
   color: rgb(88, 62, 55);
 }
 
@@ -663,18 +665,17 @@ nav {
   font-size: 15px;
   color: rgba(88, 62, 55, 0.774);
   line-height: 1.5;
+  padding-bottom: 40px;
   margin: 5px 10px 10px 10px;
 }
 
 .information-box {
   position: absolute;
-  bottom: 20px;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #f5f2e7b9;
-  width: 80%;
+  width: 70%;
   height: 15%;
-  bottom: -5%;
   display: none;
   align-items: center;
   justify-content: center;
@@ -703,8 +704,6 @@ nav {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
 }
 
 .bottom-button a {
