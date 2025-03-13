@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+/*nav*/
 header {
   background-color: #1e3121;
   height: 80px;
@@ -108,6 +109,44 @@ nav {
   position: absolute;
   bottom: 10px;
   left: 5px;
+}
+/* search */
+.container-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 16px;
+  left: 25%;
+}
+.search-container {
+  display: flex;
+  width: 600px;
+  height: 35px;
+}
+.search-container input {
+  flex: 1;
+  height: 35px;
+  line-height: 25px;
+  box-sizing: border-box;
+  outline: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 15px;
+  padding: 0 10px;
+}
+.search-container button {
+  height: 35px;
+  line-height: 25px;
+  padding: 0 15px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #3b4f43;
+  font-size: 20px;
+  color: #ffffff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .MianpageSlogan {
@@ -268,22 +307,6 @@ nav {
 
 .page-footer .footer-bottom li {
   display: inline;
-}
-
-@media (max-width: 768px) {
-  .page-footer .top {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .page-footer .footer-bottom .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .page-footer .footer-bottom ul {
-    justify-content: center;
-  }
 }
 
 .sci {
@@ -866,44 +889,6 @@ nav {
   line-height: 1.8;
 }
 
-.container-search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  position: fixed;
-  top: 16px;
-  left: 25%;
-}
-.search-container {
-  display: flex;
-  width: 600px;
-  height: 35px;
-}
-.search-container input {
-  flex: 1;
-  height: 35px;
-  line-height: 25px;
-  box-sizing: border-box;
-  outline: none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  font-size: 15px;
-  padding: 0 10px;
-}
-.search-container button {
-  height: 35px;
-  line-height: 25px;
-  padding: 0 15px;
-  border: none;
-  box-sizing: border-box;
-  background-color: #3b4f43;
-  font-size: 20px;
-  color: #ffffff;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
 /*cart-page*/
 .container2 {
   width: 1000px;
@@ -1044,19 +1029,4 @@ nav {
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
-}
-
-/* responsive design*/
-@media (max-width: 768px) {
-  .contact-box {
-    flex-direction: column;
-  }
-
-  .left {
-    display: none;
-  }
-
-  .right {
-    padding: 15px;
-  }
 }
