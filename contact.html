@@ -1,28 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>HTML PORTFOLIO</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <div class="container-contact">
-        <div class="contact-box">
-            <div class="right">
-                <h2>Contact Me</h2>
-                <form action="#" method="post">
-                <input type="text" class="contact-field" placeholder="Name">
-                <input type="email"class="contact-field"placeholder="Email">
-                <input type="text"class="contact-field"placeholder="Phone number">
-                <textarea class="contact-field"placeholder="Message"></textarea>
-                <button type="submit"class="btn">Send</button>
-                </form>
-            </div>
-        </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Petal & Poem</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="flower-store.html">Home</a></li>
+          <li>
+            <a href="product-page.html">Product</a>
+            <ul class="submenu">
+              <li><a href="product-page2.html">Single Stem</a></li>
+              <li><a href="product-page3.html">Bouquets</a></li>
+              <li><a href="product-more.html">More</a></li>
+            </ul>
+          </li>
 
-   <nav></nav>
-   </header>
-</body>
+          <li>
+            <a href="cart.html">Cart</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+
+          <li>
+            <div class="container-search">
+              <div class="search-container">
+                <input type="text" />
+                <button>Search</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="container-search">
+        <div class="search-container">
+          <input type="text" />
+          <button>Search</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-contact">
+        <div class="contact-box">
+          <div class="right">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+              <input type="text" class="contact-field" placeholder="Name" />
+              <input type="email" class="contact-field" placeholder="Email" />
+              <input
+                type="text"
+                class="contact-field"
+                placeholder="Phone number"
+              />
+              <textarea class="contact-field" placeholder="Message"></textarea>
+              <button type="submit" class="btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="top">
+        <div class="introduction">
+          <h2>About us</h2>
+          <p>
+            At Petal & Poem, we specialize in crafting elegant floral
+            arrangements that blend timeless beauty with modern design. Our
+            curated selection includes a diverse range of blooms—from classic
+            roses to rare seasonal flowers—each carefully chosen to convey
+            emotion and meaning. With a commitment to artistry and
+            personalization, we design every bouquet to reflect the unique
+            stories and sentiments of our customers. More than just a florist,
+            we strive to understand your needs and transform them into floral
+            expressions that speak directly from the heart.
+          </p>
+        </div>
+        <div class="Join-us">
+          <h2>Join us</h2>
+          <ul>
+            <li><a href="#">Store Franchise</a></li>
+            <li><a href="#">Product Development</a></li>
+            <li><a href="#">Entry Florist</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <h2>Follow us</h2>
+          <ul>
+            <li><a href="#">X</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Tik Tok</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h2>Contact</h2>
+          <img src="./images/QR_code_for_mobile_English_Wikipedia.svg.png" />
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>Copyright ©Petal & Poem. All Rights Reserved.</p>
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">service agreement</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
