@@ -6,7 +6,6 @@
 
 header {
   background-color: #1e3121;
-  height: 80px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -15,16 +14,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
-h1 {
+.site-title {
   color: white;
   font-size: 28px;
 }
 
 nav {
   display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -39,10 +40,10 @@ nav {
 .menu a {
   display: block;
   color: white;
-  line-height: 50px;
   padding: 0 20px;
   text-decoration: none;
   font-size: 20px;
+  line-height: 50px;
 }
 
 .submenu {
@@ -135,21 +136,24 @@ nav {
 }
 
 @media (max-width: 600px) {
-  h1 {
-    font-size: 24px;
+  .site-title {
+    display: none;
   }
 
-  .menu a {
-    font-size: 18px;
+  header {
+    padding: 10px;
   }
 
-  .search-container {
+  .menu {
+    justify-content: center;
+  }
+
+  .container-search {
     width: 100%;
+    margin-top: 10px;
+    justify-content: center;
   }
 }
-
-
-
 
 
 
