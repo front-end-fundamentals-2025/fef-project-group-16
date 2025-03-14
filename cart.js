@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* show the items in the cart */
   if (cart.length > 0) {
+    cartItemsContainer.innerHTML = "";
     cart.forEach(function (item) {
       const cartItem = document.createElement("div");
       cartItem.classList.add("cart-item");
@@ -56,7 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h2>${item.name}</h2>
                 <p class="price" >Price: ${item.price} SEK</p>
                 <p class="quantity" >Quantity: ${item.quantity}</p>
+                <button class="add-item" data-name="${item.name}">Add</button> 
+        <button class="subtract-item" data-name="${item.name}">Subtract</button>       
                 <button class="remove-item" data-name="${item.name}">Remove</button>
+
             `;
       cartItemsContainer.appendChild(cartItem);
     });
@@ -75,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const removeButtons = document.querySelectorAll(".remove-item");
   removeButtons.forEach(function (button) {
     /* add eventlistener to remove buttons */
-
     button.addEventListener("click", function () {
       const productName = button.getAttribute("data-name");
       cart = cart.filter(function (item) {
@@ -86,12 +89,40 @@ document.addEventListener("DOMContentLoaded", function () {
       location.reload();
     });
   });
+  /*get all add buttons*/
+  const addButtons = document.querySelectorAll(".add-item");
+  addButtons.forEach(function (button) {
+    /* add eventlistener to add buttons */
+    button.addEventListener("click", function () {
+      const productName = button.getAttribute("data-name");
+      const existingProduct = cart.find((item) => item.name === productName);
+      if (existingProduct) {
+        existingProduct.quantity += 1;
+        localStorage.setItem("cart", JSON.stringify(cart));
+        location.reload();
+      }
+    });
+  });
+
+  /*get all subtract buttons*/
+  const subtractButtons = document.querySelectorAll(".subtract-item");
+  subtractButtons.forEach(function (button) {
+    /* add eventlistener to subtract buttons */
+    button.addEventListener("click", function () {
+      const productName = button.getAttribute("data-name");
+      const existingProduct = cart.find((item) => item.name === productName);
+      if (existingProduct && existingProduct.quantity > 1) {
+        existingProduct.quantity -= 1;
+        localStorage.setItem("cart", JSON.stringify(cart));
+        location.reload();
+      }
+    });
+  });
 });
 
+const menuToggle = document.querySelector(".menu");
+const menu = document.querySelector(".menu");
 
-const menuToggle = document.querySelector('.menu');
-const menu = document.querySelector('.menu');
-
-menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('active');
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
 });
