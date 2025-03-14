@@ -132,9 +132,11 @@ nav {
 }
 
 
-
-
-
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .MianpageSlogan {
   background-color: #2e4c33;
@@ -148,59 +150,63 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .MianpageSlogan h2 {
-  font-size: 40px;
+  font-size: 3vw;
 }
 .MianpageSlogan p {
   color: #f5f2e7;
-  font-size: 20px;
+  font-size: 1.5vw;
   margin: 25px 0;
 }
-.MianpageSlogan a {
-  color: white;
-  text-decoration: none;
-}
+
 .MianpageIntroduction {
   background-color: antiquewhite;
   color: rgb(88, 62, 55);
-  height: 700px;
+  padding: 50px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
   line-height: 1.8em;
+  text-align: center;
 }
 
 .info {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .info img {
-  width: 40%;
+  width: 100%;
+  max-width: 600px;
 }
+
 .info1 {
-  width: 60%;
+  flex: 1;
   background-color: #2e4c33;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  text-align: center;
 }
 .info1 h2 {
   color: #f5f2e7;
-  font-size: 20px;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  margin: 20px 0;
 }
+
 .info1 p {
-  text-align: center;
+  color: #f5f2e7;
   line-height: 2em;
   font-size: 16px;
-  color: #f5f2e7;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin: 10px 0 40px;
 }
 
 .page-footer {
@@ -295,6 +301,65 @@ nav {
 .page-footer .footer-bottom li {
   display: inline;
 }
+
+
+@media (max-width: 1024px) {
+  .MianpageSlogan h2 {
+    font-size: 5vw;
+  }
+
+  .MianpageSlogan p {
+    font-size: 2vw;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .MianpageSlogan h2 {
+    font-size: 6vw;
+  }
+
+  .MianpageSlogan p {
+    font-size: 3vw;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .MianpageSlogan {
+    height: 60vh;
+  }
+
+  .MianpageSlogan h2 {
+    font-size: 7vw;
+  }
+
+  .MianpageSlogan p {
+    font-size: 4vw;
+  }
+
+  .info1 h2 {
+    font-size: 18px;
+  }
+
+  .info1 p {
+    font-size: 14px;
+  }
+
+}
+
+
+
+
+
+
 
 .sci {
   list-style: none;
